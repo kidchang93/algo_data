@@ -5,6 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Snail {
+    /*
+     달팽이는 하(0) -> 우(1) -> 상(2) -> 좌(3) 방향으로 진격
+     25 부터 거꾸로 번호를 1씩 깎으면서 채워 넣는다
+     달팽이는 일단 방향을 유지한 채로 진격한다.
+     달팽이가 방향을 바꾸는 경우는?
+     맵 밖으로 가는 경우 -> 방향을 바꿔줘야돼
+     맵 안, but 이미 값이 채워져 있는 경우 ->
+    */
     static int N;
     static int target;
     static int[][] snail;
@@ -54,5 +62,6 @@ public class Snail {
         }
         print(snail);
     }
+
 
 }
